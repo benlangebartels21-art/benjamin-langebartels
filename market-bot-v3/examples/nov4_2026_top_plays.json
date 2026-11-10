@@ -1,0 +1,50 @@
+[
+  {
+    "issue_date": "2026-11-04",
+    "ticker": "ANET",
+    "type": "swing",
+    "strategy": "post_earnings_drift",
+    "score": 8.0,
+    "confidence_pct": 55,
+    "trigger_prose": "Holds above $186 after the first 30 minutes, or pulls back to $182 to $186 and holds.",
+    "trigger_rule": {
+      "rule": {"any": [
+        {"op": "close_above", "level": 186},
+        {"all": [{"op": "low_in_zone", "low": 182, "high": 186},
+                 {"op": "close_at_or_above", "level": 182}]}
+      ]},
+      "valid_days": 1,
+      "intraday_basis": "first_30_min"
+    },
+    "stop_price": 175,
+    "stop_type": "close",
+    "target1": 195,
+    "target2": 205,
+    "timeframe_days": 10,
+    "catalyst": "PLACEHOLDER pending V2 sample report: score, confidence, targets, timeframe, strategy and catalyst are not from the report.",
+    "scoring_version": "v3.0"
+  },
+  {
+    "issue_date": "2026-11-04",
+    "ticker": "AMD",
+    "type": "day",
+    "strategy": "post_earnings_drift",
+    "score": 7.5,
+    "confidence_pct": 50,
+    "trigger_prose": "Opening range holds above $505 to $510.",
+    "trigger_rule": {
+      "rule": {"all": [{"op": "open_above", "level": 505},
+                       {"op": "low_at_or_above", "level": 505},
+                       {"op": "close_above", "level": 505}]},
+      "valid_days": 1,
+      "intraday_basis": "opening_range"
+    },
+    "stop_price": 495,
+    "stop_type": "close",
+    "target1": 525,
+    "target2": 540,
+    "timeframe_days": 3,
+    "catalyst": "PLACEHOLDER pending V2 sample report: score, confidence, stop, targets, timeframe, strategy and catalyst are not from the report.",
+    "scoring_version": "v3.0"
+  }
+]
