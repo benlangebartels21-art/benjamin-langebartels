@@ -47,7 +47,7 @@ class LedgerTest(unittest.TestCase):
     def test_rejects_ungradable(self):
         self.bad(trigger_rule=None)
         self.bad(trigger_rule={"rule": {"op": "looks_strong"}, "valid_days": 1, "intraday_basis": None})
-        self.bad(trigger_rule={"rule": {"op": "close_above", "level": 186}, "valid_days": 11, "intraday_basis": None})
+        self.bad(trigger_rule={"rule": {"op": "close_above", "level": 186}, "valid_days": 16, "intraday_basis": None})
         self.bad(trigger_prose="")
         self.bad(direction="short")
         self.bad(score=11)

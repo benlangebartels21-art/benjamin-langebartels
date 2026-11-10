@@ -37,7 +37,7 @@
     "target1": 194,
     "target2": 216.74,
     "timeframe_days": 15,
-    "catalyst": "From the Nov 4, 2026 sample report: score, stop, targets, timeframe. Target 1 was a $194 to $195 zone, stored as its lower edge. PLACEHOLDER: confidence (V2 never stated one), strategy, catalyst text.",
+    "catalyst": "Q3 revenue $3.66B vs $3.33B expected, +58.5% YoY. Adjusted EPS $1.20 vs $1.08 expected. Q4 guide $3.9B to $4.0B revenue vs about $3.6B expected. [All fields from the Nov 4, 2026 sample report except confidence_pct, which V2 never stated: PLACEHOLDER. Target 1 was a $194 to $195 zone, stored as its lower edge.]",
     "scoring_version": "v3.0"
   },
   {
@@ -47,7 +47,7 @@
     "strategy": "post_earnings_drift",
     "score": 8.0,
     "confidence_pct": 50,
-    "trigger_prose": "Opening range holds above $505 to $510.",
+    "trigger_prose": "Day trade only if the opening range holds above $505 to $510 in the first 30 minutes on strong volume.",
     "trigger_rule": {
       "rule": {
         "all": [
@@ -69,11 +69,11 @@
       "intraday_basis": "opening_range"
     },
     "stop_price": 495,
-    "stop_type": "close",
+    "stop_type": "touch",
     "target1": 540,
     "target2": 565,
-    "timeframe_days": 3,
-    "catalyst": "From the Nov 4, 2026 sample report: score, targets. PLACEHOLDER: confidence (V2 never stated one), stop, timeframe, strategy, catalyst text.",
+    "timeframe_days": 1,
+    "catalyst": "Q3 adjusted EPS $2.09 vs $1.95 expected. Revenue $13.4B vs $13.1B expected, +45%. Q4 revenue guide about $17B vs $16.3B expected. [Day trade version of the Nov 4, 2026 sample report play. All fields from the report except confidence_pct, which V2 never stated: PLACEHOLDER.]",
     "scoring_version": "v3.0"
   }
 ]
