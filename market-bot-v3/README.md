@@ -12,7 +12,8 @@ Build status: Component 1 (ledger) done. Morning run, grader, calibration to fol
     python bot.py ledger show ID
     python bot.py ledger verify
 
-- Database: `data/ledger.db` (SQLite, table `predictions`), override with `--db`.
+- Database: `data/ledger.db` (SQLite, table `predictions`), override with `--db`. Commit and push it after
+  every run: the push timestamp is outside proof the prediction predates the outcome.
 - Rows are immutable (UPDATE and DELETE abort) and hash chained; `verify` detects edits.
 - A prediction is rejected unless it is issued before 09:30 ET on its issue date.
   `--backfill` allows a past date and flags the row BACKFILLED permanently.
